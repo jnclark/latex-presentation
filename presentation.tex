@@ -9,8 +9,8 @@
 \usepackage{pgfplots}
 \usepgfplotslibrary{dateplot}
 
-\usepackage{xspace}
-\newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+\usepackage{pgfpages}
+\setbeameroption{show notes on second screen}
 
 \title{PRESENTATION TEMPLATE}
 \subtitle{An example of some of \LaTeX 's included presentation features}
@@ -26,26 +26,30 @@
 \begin{frame}{Table of contents}
   \setbeamertemplate{section in toc}[sections numbered]
   \tableofcontents[hideallsubsections]
+  \note{One can implement notes in Beamer}
 \end{frame}
 
 \section{Introduction}
 
 \begin{frame}{A Perfect Slide}
   This is an example slide. One can use \LaTeX easily here.
+  \note{Talk about how \LaTeX is pretty neat.}
 \end{frame}
 
 \section{Build Up}
 
 \begin{frame}{Relevant definitons and work}
   The \alert{magic} happens \emph{here}.
+  \note{Don't forget to acknowledge history of subject}
 \end{frame}
 
 
 \begin{frame}{Emphasis on a list}
   \begin{itemize}[<+- | alert@+>]
     \item \alert<3>{Bow ties are\only<3>{ extremely} cool}
-    \item Fezes are cool
+    \item Fezes are cool 
   \end{itemize}
+  \note{Stetsons are also cool, but that would just be silly}
 \end{frame}
 
 \begin{frame}{Blocks}
@@ -81,18 +85,21 @@
       \end{exampleblock}
 
   \end{columns}
+  \note{Sometimes, one want to place theorems or examples in blocks}
 \end{frame}
 
 \begin{frame}{References}
   We can also call upon references, if need be. 
   
   For example, Automorphic forms are pretty cool. \cite{Bump96}
+  \note{Indeed they are!}
 \end{frame}
 
 \section{Conclusion}
 
 \begin{frame}{Summary}
   The main conclusion of this presentation would appear here.
+  \note{Do not forget to thank department and colaborators!}
 \end{frame}
 
 \begin{frame}[standout]
@@ -116,7 +123,7 @@
 
   If you would like the source code of my presentation template, it is availible at 
 
-\begin{center}\url{github.com/jnclark/latex-presentation}\end{center}
+  \begin{center}\url{github.com/jnclark/latex-presentation}\end{center}
 
   You can also get the source of this theme and a demo presentation from
 
@@ -127,7 +134,6 @@
   Attribution-ShareAlike 4.0 International License}.
 
   \begin{center}\ccbysa\end{center}
-
 \end{frame}
 
 \end{document}
