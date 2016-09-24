@@ -8,9 +8,9 @@ To use standard inline notes, proceed as per usual in Beamer. To view the presen
 pdfpc --notes=right presentation.pdf
 ~~~~
 
-To take advantage of pdfpc's additional notes, I have used github.com/cebe/pdfpc-latex-notes as a subrepo.
-Simply denote these secondry notes as a 
+To take advantage of pdfpc's additional notes, put the note for the slide number (as read bu pdfpc) in the following format: 
 ~~~~
-\pnote{Note}
+### 7
+Your comment about how to deliver a certain line
 ~~~~
-Following the assocaiated frame
+
