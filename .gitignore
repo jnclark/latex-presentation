@@ -1,0 +1,13 @@
+#Autogen LaTeX files
+presentation.aux
+presentation.bbl
+presentation.blg
+presentation.log
+presentation.nav
+presentation.out
+presentation.snm
+presentation.toc
+presentation.vrb
+
+#the generated document
+presentation.pdf
