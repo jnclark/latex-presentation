@@ -1,0 +1,136 @@
+\usetheme{metropolis}
+\usepackage{appendixnumberbeamer}
+
+\usepackage{booktabs}
+\usepackage[scale=2]{ccicons}
+
+\usepackage{pgfplots}
+\usepgfplotslibrary{dateplot}
+
+
+
+\title{PRESENTATION TEMPLATE}
+\subtitle{An example of some of \LaTeX 's included presentation features}
+\date{\today}
+\author{Jacob Clark}
+\institute{University of Missouri - Columbia}
+\titlegraphic{\hfill\includegraphics[height=1.5cm]{mu-logo.png}}
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}{Table of contents}
+  \setbeamertemplate{section in toc}[sections numbered]
+  \tableofcontents[hideallsubsections]
+  \note{One can implement notes in Beamer}
+\end{frame}
+
+\section{Introduction}
+
+\begin{frame}{A Perfect Slide}
+  This is an example slide. One can use \LaTeX easily here.
+  \note{Talk about how \LaTeX is pretty neat. It is, so this should not be difficult.}
+\end{frame}
+
+\section{Build Up}
+
+\begin{frame}{Relevant definitons and work}
+  The \alert{magic} happens \emph{here}.
+  \note{Don't forget to acknowledge history of subject}
+\end{frame}
+
+
+\begin{frame}{Emphasis on a list}
+  \begin{itemize}[<+- | alert@+>]
+    \item \alert<3>{Bow ties are\only<3>{ extremely} cool}
+    \item Fezes are cool 
+  \end{itemize}
+  \note{Stetsons are also cool, but that would just be silly}
+\end{frame}
+
+\begin{frame}{Blocks}
+  In this theme, we have the ability to call upon three pre-defined block environments.
+  \begin{columns}[T,onlytextwidth]
+    \column{0.5\textwidth}
+      \begin{block}{Default}
+        Block content.
+      \end{block}
+
+      \begin{alertblock}{Alert}
+        Block content.
+      \end{alertblock}
+
+      \begin{exampleblock}{Example}
+        Block content.
+      \end{exampleblock}
+
+    \column{0.5\textwidth}
+
+      \metroset{block=fill}
+
+      \begin{block}{Default}
+        Block content.
+      \end{block}
+
+      \begin{alertblock}{Alert}
+        Block content.
+      \end{alertblock}
+
+      \begin{exampleblock}{Example}
+        Block content.
+      \end{exampleblock}
+
+  \end{columns}
+  \note{Sometimes, one want to place theorems or examples in blocks}
+\end{frame}
+
+\begin{frame}{References}
+  We can also call upon references, if need be. 
+  
+  For example, Automorphic forms are pretty cool. \cite{Bump96}
+  \note{Indeed they are!}
+\end{frame}
+
+\section{Conclusion}
+
+\begin{frame}{Summary}
+  The main conclusion of this presentation would appear here.
+  \note{Do not forget to thank department and colaborators!}
+\end{frame}
+
+\begin{frame}[standout]
+  Questions?
+\end{frame}
+
+\appendix
+
+\begin{frame}[fragile]{Backup slides}
+  Additional information one might want to reference, for questions etcetera, but not numbered or noted as part of the presentation by the theme's progress bar can be placed here.
+\end{frame}
+
+\begin{frame}[allowframebreaks]{References}
+
+  \bibliography{presentation}
+  \bibliographystyle{abbrv}
+
+\end{frame}
+
+\begin{frame}{Source Code}
+
+  If you would like the source code of this presentation template, and instructions for use, it is availible at 
+
+  \begin{center}\url{github.com/jnclark/latex-presentation}\end{center}
+
+  You can also get the source of this theme and a demo presentation from
+
+  \begin{center}\url{github.com/matze/mtheme}\end{center}
+
+  The theme \emph{itself} is licensed under a
+  \href{http://creativecommons.org/licenses/by-sa/4.0/}{Creative Commons
+  Attribution-ShareAlike 4.0 International License}.
+
+  \begin{center}\ccbysa\end{center}
+\end{frame}
+
+\end{document}
