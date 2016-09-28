@@ -15,3 +15,6 @@ presentation_handout
 
 #the generated document
 *.pdf
+
+#the build area
+build/

@@ -24,3 +24,5 @@ To take advantage of pdfpc's additional notes (referenced above), put the note f
 Your comment about how to deliver a certain line
 ~~~~
 in the file presentation.pdfpc
+
+Note, for the makefile to work, you might want to take a look at my .latexmkrc in [dotfiles](https://github.com/jnclark/dotfiles)
